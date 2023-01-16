@@ -108,3 +108,30 @@ Note: In case of input data being supplied to the question, it should be assumed
 
 
 """
+
+def two_dim_array():
+    digits = input().split('.')
+    print(digits)
+
+# two_dim_array()
+
+"""
+Question:
+Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+
+Suppose the following input is supplied to the program:
+
+without,hello,bag,world
+Then, the output should be:
+
+bag,hello,without,world
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+"""
+
+def sorting():
+    words = input('Enter a comma separated sequence of words: ').split(',')
+    words.sort()
+    print(','.join(words))
+
+# sorting()
