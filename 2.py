@@ -108,7 +108,7 @@ Note: In case of input data being supplied to the question, it should be assumed
 
 
 """
-
+# Skipped
 def two_dim_array():
     digits = input().split('.')
     print(digits)
@@ -135,3 +135,31 @@ def sorting():
     print(','.join(words))
 
 # sorting()
+
+"""
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+
+Suppose the following input is supplied to the program:
+
+Hello world
+Practice makes perfect
+Then, the output should be:
+
+HELLO WORLD
+PRACTICE MAKES PERFECT
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+"""
+
+def sorting2():
+    lst = []
+    while True:
+        seq = input("Enter a sequence: ")
+        if not seq:
+            break
+        else:
+            lst.append(seq.upper())
+    for x in lst:
+        print(x)
+
+sorting2()
