@@ -89,11 +89,11 @@ In case of input data being supplied to the question, it should be assumed to be
 def question13():
     letters = 0
     digits = 0
-    seq = 'hello world! 123'
-    for x in list(seq):
-        if str(x).isdigit():
+    seq = input('Enter a prompt: ')
+    for x in seq:
+        if x.isdigit():
             digits += 1
-        elif str(x).isalpha():
+        elif x.isalpha():
             letters += 1
     print(f'Letters: {letters}, Digits: {digits}')
 
