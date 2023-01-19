@@ -29,13 +29,15 @@ In case of input data being supplied to the question, it should be assumed to be
 
 import re
 
+
 def question18():
-    password_list = ['ABd1234@1','a F1#','2w3E*','2We3345']
+    password_list = ['ABd1234@1', 'a F1#', '2w3E*', '2We3345']
     for password in password_list:
         regex = r'^.(?=.{8,16})(?=.*[a-zA-Z])(?=.*\d)(?=.*[#$@"]).*$'
         matches = re.fullmatch(regex, password)
         if matches:
             print(password)
+
 
 # question18()
 
@@ -65,9 +67,11 @@ We use itemgetter to enable multiple sort keys.
 """
 from operator import itemgetter
 
+
 def question19():
-    li = (('Tom,19,80'),('John,20,90'),('Jony,17,91'),('Jony,17,93'),('Json,21,85'))
-    new_li = sorted(li, key=itemgetter(0,1,2))
+    li = (('Tom,19,80'), ('John,20,90'), ('Jony,17,91'), ('Jony,17,93'), ('Json,21,85'))
+    new_li = sorted(li, key=itemgetter(0, 1, 2))
     print(new_li)
+
 
 question19()

@@ -15,6 +15,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def question14():
     upper = 0
     lower = 0
@@ -25,6 +26,7 @@ def question14():
         elif x.islower():
             lower += 1
     print(f'Upper case: {upper}, Lower case: {lower}')
+
 
 # question14()
 
@@ -44,9 +46,10 @@ In case of input data being supplied to the question, it should be assumed to be
 
 """
 
+
 def question15():
     num = input("Enter a number: ")
-    out = int(num*4) + int(num*3) + int(num*2) + int(num)
+    out = int(num * 4) + int(num * 3) + int(num * 2) + int(num)
     print(out)
 
 # question15()

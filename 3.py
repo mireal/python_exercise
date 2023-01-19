@@ -15,10 +15,12 @@ In case of input data being supplied to the question, it should be assumed to be
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 """
 
+
 def question10():
     sequence = input('Enter a prompt: ').split()
     sequence = sorted(set(sequence))
     print(' '.join(sequence))
+
 
 # question10()
 
@@ -40,10 +42,11 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def question11():
     seq = input('Enter a prompt: ').split(',')
     for x in seq:
-        if int(x, base = 2) % 5 == 0:
+        if int(x, base=2) % 5 == 0:
             print(x)
 
 
@@ -58,6 +61,7 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
+
 
 def question12():
     seq = input('Enter a prompt: ').split(',')
@@ -86,6 +90,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def question13():
     letters = 0
     digits = 0
@@ -96,5 +101,6 @@ def question13():
         elif x.isalpha():
             letters += 1
     print(f'Letters: {letters}, Digits: {digits}')
+
 
 question13()

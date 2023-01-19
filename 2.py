@@ -50,6 +50,7 @@ class StringMethods:
     def printString(self):
         print(self.string.upper())
 
+
 a = StringMethods()
 # a.getString()
 # a.printString()
@@ -79,6 +80,7 @@ In case of input data being supplied to the question, it should be assumed to be
 """
 from math import sqrt
 
+
 def calc():
     C = 50
     H = 30
@@ -89,6 +91,7 @@ def calc():
     for d in D:
         Q = sqrt((2 * C * d) / H)
         print(int(Q), end=', ')
+
 
 # calc()
 
@@ -108,9 +111,12 @@ Note: In case of input data being supplied to the question, it should be assumed
 
 
 """
+
+
 # Skipped
 def two_dim_array():
     pass
+
 
 # two_dim_array()
 
@@ -128,10 +134,12 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def sorting():
     words = input('Enter a comma separated sequence of words: ').split(',')
     words.sort()
     print(','.join(words))
+
 
 # sorting()
 
@@ -150,6 +158,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def sorting2():
     lst = []
     while True:
@@ -160,5 +169,6 @@ def sorting2():
             lst.append(seq.upper())
     for x in lst:
         print(x)
+
 
 sorting2()

@@ -7,6 +7,8 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 Hints:
 Consider use range(#begin, #end) method.
 """
+
+
 def numbers():
     for ind, num in enumerate(range(2000, 3200)):
         if num % 7 == 0 and num % 5 != 0:
@@ -14,6 +16,7 @@ def numbers():
                 print(num)
             else:
                 print(num, end=' ,')
+
 
 # numbers()
 
@@ -27,12 +30,14 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def factorial():
     num = int(input('Enter a positive integer: '))
     fact = 1
     for num in range(1, num + 1):
         fact = fact * num
         print(fact, end=' ,')
+
 
 # factorial()
 
@@ -49,11 +54,13 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.Consider use dict()
 """
 
+
 def num_dict():
     n = int(input('Enter a positive integer: '))
     di = {}
-    for i in range(1,n+1):
-        di[i] = i*i
+    for i in range(1, n + 1):
+        di[i] = i * i
     print(di)
+
 
 num_dict()

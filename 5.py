@@ -13,12 +13,13 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def question16():
     li = input('Enter a sequence of comma-separated numbers: ').split(',')
     square_li = []
     for x in li:
         if int(x) % 2 != 0:
-            square_li.append(str(int(x)**2))
+            square_li.append(str(int(x) ** 2))
     print(','.join(square_li))
 
 
@@ -46,6 +47,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 """
 
+
 def question17():
     deposit = 0
     while True:
@@ -55,5 +57,6 @@ def question17():
         elif operation[0] == 'W':
             deposit -= int(operation[1])
         print(f'Balance: {deposit}')
+
 
 question17()
