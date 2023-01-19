@@ -110,8 +110,7 @@ Note: In case of input data being supplied to the question, it should be assumed
 """
 # Skipped
 def two_dim_array():
-    digits = input().split('.')
-    print(digits)
+    pass
 
 # two_dim_array()
 
