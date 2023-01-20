@@ -85,14 +85,14 @@ Define an instance parameter, need add it in __init__ method.You can init an obj
 """
 
 class Student:
-    name = 'Name'
+    name = 'Student'
 
     def __init__(self, name = None):
         self.name = name
 
 Jim = Student('Jim')
-print(Jim.name)
+print(f'{Student.name} name is {Jim.name}')
 
 John = Student()
 John.name = "John"
-print(John.name)
+print(f'{Student.name} name is {John.name}')
