@@ -71,4 +71,4 @@ def question21():
     distance = int(round(sqrt((position[0]**2)+(position[1]**2))))
     print(distance)
 
-# question21()
+question21()
