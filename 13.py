@@ -57,7 +57,7 @@ class Shape:
         pass
     def area(self):
         return 0
-    
+
 class Square(Shape):
     def __init__(self, lenght = 0):
         Shape.__init__(self)
